@@ -1,0 +1,1 @@
+AbsoLudo-promo-S2
