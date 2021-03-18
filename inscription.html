@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="icon" href="./dist/img/icon-de.svg">
+    <title>AbsoLudo | Rejoins l'aventure</title>
+</head>
+<body  id="inscription">
+    <header>
+        <nav class="nav">
+            <a href="index.html"><img src="./dist/img/logo-absoludo-petit.svg" alt="" class="logo__mobil"></a>
+            <a href="index.html"><img src="./dist/img/logo-absoludo-grand.svg" alt="" class="logo__desktop"></a>  
+            <ul class="nav__items">
+                <li class="nav__link pt-5"><a href="pro.html" class="nav__link-item">Espace Pro</a></li>
+                <li class="nav__link pt-5 nav__link-mobil-hide"><a href="index.html#fonctionnalities" class="nav__link-item">Fonctionnalités</a></li>
+                <span class="nav__items-column">
+                    <li class="nav__link nav__link-mobil-hide"><a href="#" class="nav__link-item secondary__btn">Soutenir</a></li>
+                    <li class="nav__link nav__link-mobil-hide"><a href="inscription.html" class="nav__link-item primary__btn">S'inscrire</a></li>
+                </span>
+            </ul>
+        </nav>
+        <h1 class="h1">Ne manquez pas la sortie <span class="h1__highlight">d’AbsoLudo !</span></h1>
+    </header>
+    <main>
+        <div id="form-particulier" class="form">
+            <form class="form-items particulier">
+                <label>Nom :</label>
+                <input type="text" class="form-input">
+                <label>Prénom :</label>
+                <input type="text" class="form-input">
+                <label>Mail :</label>
+                <input type="text" class="form-input">
+                <label>Jeu Préféré :</label>
+                <input type="text" class="form-input">
+                <input type="submit" class="form-btn" value="S'inscire">
+            </form>
+            <p>Vous êtes un professionnel ? <a href="#pro" class="change-form">Inscrivez-vous ici</a></p>
+        </div>
+        <div id="form-pro" class="form none">
+            <form class="form-items pro">
+                <label>Nom société :</label>
+                <input type="text" class="form-input">
+                <select class="form-list" name="categorie">
+                    <option class="form-list-opt" value="">Boutique Spécialisée</option>
+                    <option class="form-list-opt" value="">Bar à jeux</option>
+                    <option class="form-list-opt" value="">Association</option>
+                </select>
+                <label>Mail :</label>
+                <input type="text" class="form-input">
+                <label>Adresse :</label>
+                <input type="text" class="form-input">
+                <input type="submit" class="form-btn" value="S'inscire">
+            </form>
+            <p>Vous êtes un particulier ? <a href="#particulier" class="change-form">Inscrivez-vous ici</a></p>
+        </div>
+        <div class="separateur"></div>
+        <section class="banniere don">
+            <h3 class="banniere-h3">Vous pouvez soutenir le projet !</h3>
+            <a href="#" class="banniere-btn primary__btn">Faire un don</a>
+        </section>
+    </main>
+    <script src="./dist/js/inscription.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,612 @@
+/* ------------------------------------ _Config
+                  1 - Variables
+                  2 - Configuration de base 
+                  3 - Responsive ------------------------------------ */
+/* ------------------------------------ 1- Variables ------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap");
+/* ------------------------------------ 2- Configuration de base ------------------------------------ */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+/* ------------------------------------ 3- Responsive ------------------------------------ */
+/* ------------------------------------ _Elements
+                  1 - Globaux
+                  2 - Navigation 
+                  3 - Banniere
+                  4 - Formulaire 
+                  5 - Footer ------------------------------------ */
+/* ------------------------------------ 1 - Globaux ------------------------------------ */
+body {
+  background: #E1CAB4;
+  overflow-x: hidden;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.separateur {
+  height: 50px;
+}
+
+/* ------------------------------------ 2 - Navigation ------------------------------------ */
+.nav {
+  position: relative;
+}
+
+.nav .logo__desktop {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.nav .logo__mobil {
+  width: 100px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.nav__items {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-flow: row;
+}
+
+.nav__items-column {
+  display: flex;
+  flex-flow: column;
+}
+
+.nav__link {
+  list-style: none;
+  margin: 5px;
+}
+
+.nav__link-mobil-hide {
+  display: none;
+}
+
+.nav__link-item {
+  font-size: 1.2rem;
+}
+
+.nav__link-item.pt-5 {
+  color: #2e2e36;
+  text-decoration: none;
+}
+
+/* ------------------------------------ 3 - Banniere ------------------------------------ */
+.banniere {
+  padding: 10px;
+  text-align: center;
+  background: #2A707A;
+  width: 100vw;
+  margin-left: -18px;
+}
+
+.banniere-h3 {
+  margin: 15px auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  color: #E1CAB4;
+}
+
+.banniere-p {
+  color: #E1CAB4;
+}
+
+.banniere-btn {
+  margin: 15px auto;
+}
+
+.banniere .secondary__btn {
+  color: #E1CAB4;
+  border: 2px #E1CAB4 solid;
+}
+
+/* ------------------------------------ 4 - Formulaire ------------------------------------ */
+.form-items {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.form label {
+  height: 10px;
+  color: rgba(46, 46, 54, 0.7);
+  text-indent: 20px;
+  width: 100%;
+  margin-top: 30px;
+  font-family: "poppins", sans-serif;
+}
+
+.form-btn {
+  color: #2A707A;
+  border: 2px solid #2A707A;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px 10px;
+  background: transparent;
+  margin: 20px 0 0 0;
+  font-size: 1em;
+}
+
+.form-input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #2A707A;
+  width: 100%;
+  color: #2e2e36;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.form-list {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #2A707A;
+  color: #2e2e36;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+/* ------------------------------------ 5 - Footer ------------------------------------ */
+.footer {
+  border-top: 2px solid #2e2e36;
+}
+
+.footer-p {
+  padding: 10px;
+}
+
+.footer-p-link {
+  color: #DB5F31;
+  text-decoration: none;
+}
+
+/* ------------------------------------ _Composants
+                  1 - Textes
+                  2 - Boutons
+                  3 - Inscription 
+                  4 - Professionnel
+                  5 - Acceuil ------------------------------------ */
+/* ------------------------------------ 1 - Textes ------------------------------------ */
+.h1 {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 2.5em;
+  color: #2A707A;
+  padding-top: 130px;
+}
+
+.h1__highlight {
+  color: #DB5F31;
+}
+
+h2 {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 2em;
+  color: #2A707A;
+}
+
+h3 {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1.5em;
+  color: #2A707A;
+}
+
+p,
+a,
+li {
+  color: #2e2e36;
+  font-family: "poppins", sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ------------------------------------ 2 - Boutons ------------------------------------ */
+.primary__btn {
+  display: block;
+  width: fit-content;
+  color: #E1CAB4;
+  text-decoration: none;
+  background: #DB5F31;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.secondary__btn {
+  display: block;
+  width: fit-content;
+  color: #2A707A;
+  text-decoration: none;
+  border: 2px #2A707A solid;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* ------------------------------------ 3 - Inscription ------------------------------------ */
+#inscription .h1 {
+  color: #2e2e36;
+}
+
+#inscription p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#inscription p a {
+  text-decoration: underline;
+}
+
+#inscription .none {
+  display: none;
+}
+
+/* ------------------------------------ 4 - Professionnels ------------------------------------ */
+#pro .description-img {
+  display: none;
+}
+
+#pro .tarif-item {
+  border: 2px solid #2A707A;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#pro .tarif-item-h3 {
+  font-family: "Akaya Telivigala", cursive;
+  color: #2A707A;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#pro .tarif-item-liste {
+  margin-left: 20px;
+}
+
+#pro .tarif-item-liste-item {
+  list-style: disc;
+}
+
+#pro .tarif-item-price {
+  color: #2A707A;
+  font-size: 1.5rem;
+}
+
+/* ------------------------------------ 5 - Accueil ------------------------------------ */
+#home {
+  /*margin: 0;*/
+}
+
+#home header .showcase {
+  height: 100vh;
+  width: 100vw;
+  background: url(../img/absoludo-showcas.webp) center no-repeat;
+  background-size: cover;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#home header .pt-5 .nav__link-item {
+  color: #E1CAB4;
+  text-decoration: none;
+}
+
+#home header .h1 {
+  color: #E1CAB4;
+  margin: 0;
+}
+
+#home header .tagline {
+  color: #E1CAB4;
+  font-size: 1.5em;
+  margin-top: 5px;
+}
+
+#home header .banniere {
+  position: absolute;
+  bottom: 20px;
+}
+
+#home main #ancre1 {
+  margin-top: 80vh;
+}
+
+#home main .pro {
+  background: linear-gradient(to right, rgba(46, 46, 54, 0.9), rgba(46, 46, 54, 0.3)), url("../img/absoludo-espace-pro.webp") center top no-repeat;
+  background-size: cover;
+}
+
+#home main .pro h3 {
+  color: #DB5F31;
+}
+
+#home main .don {
+  background: linear-gradient(to right, rgba(46, 46, 54, 0.9), rgba(46, 46, 54, 0.3)), url("../img/absoludo-soutenir.webp") center no-repeat;
+  background-size: cover;
+}
+
+#home main .don h3 {
+  color: #DB5F31;
+}
+
+#home main .fonctionnalities .swiper-slide {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#home main .fonctionnalities__item {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+#home main .fonctionnalities__item-h2 {
+  margin-bottom: 20px;
+}
+
+#home main .fonctionnalities__item-p {
+  margin-bottom: 10px;
+}
+
+#home main .fonctionnalities__item-btns {
+  position: absolute;
+  top: 320px;
+}
+
+#home main .fonctionnalities__item .swiper-button-prev,
+#home main .fonctionnalities__item .swiper-button-next {
+  margin: 0 5px;
+  border: 2px solid #2A707A;
+  color: #2A707A;
+  width: fit-content;
+}
+
+#home main .fonctionnalities__item .swiper-button-prev::after,
+#home main .fonctionnalities__item .swiper-button-next::after {
+  content: "";
+}
+
+#home main .fonctionnalities__item-img {
+  width: 300px;
+  align-self: center;
+  margin: 70px 0;
+}
+
+#home main .video {
+  display: flex;
+  flex-flow: column;
+}
+
+#home main .video video {
+  margin: 0 auto;
+}
+
+#home main .team {
+  overflow: hidden;
+}
+
+#home main .team .mobil-hidden {
+  display: none;
+}
+
+#home main .team .mobil-hidden .flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#home main .team__item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#home main .team__item-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#home main .team__item-nom {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+#home main .team__item-spe {
+  font-size: 1.2rem;
+  color: #DB5F31;
+  margin: 0;
+}
+
+#home main .team__item-game {
+  width: 150px;
+  text-align: center;
+  margin: 0;
+}
+
+#home main .team__item-contact .social {
+  color: #2A707A;
+  margin: 10px;
+}
+
+#home main .team .swiper-slide {
+  width: 200px !important;
+  height: 420px;
+}
+
+#home main .team .swiper-slide-active {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+/* ------------------------------------ _Composants
+                  1 - Medium Screen
+                    1- Navigation
+                    2- Footer
+                    3- Banniere
+                  2 - Large Screen
+                    1- Navigation
+                  3 - Extralarge Screen ------------------------------------ */
+/* ------------------------------------ 1 - Medium Screen ------------------------------------ */
+@media screen and (min-width: 700px) {
+  header {
+    /* ------------------------ 1 - Navigation  ------------------------ */
+  }
+  header .nav .logo__desktop {
+    display: block;
+  }
+  header .nav .logo__mobil {
+    display: none;
+  }
+  header .nav__items {
+    top: 20px;
+  }
+  header .nav__link-mobil-hide {
+    display: block;
+  }
+  /* ------------------------ 2 - Footer  ------------------------ */
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer p {
+    width: 33%;
+    text-align: center;
+  }
+  /* ------------------------ 3 - Bannniere  ------------------------ */
+  .banniere {
+    margin-left: -5vw;
+  }
+  /* ------------------------ 4 - Espace Pro  ------------------------ */
+  #pro .description {
+    display: flex;
+  }
+  #pro .description-img {
+    display: block;
+    width: 350px;
+    margin-top: 150px;
+  }
+  #pro .tarif {
+    margin-top: -150px;
+  }
+  #pro .tarif-items {
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #pro .tarif-item {
+    margin: 0;
+  }
+  #home main .team .mobil-hidden {
+    display: block;
+  }
+  #home main .team .swiper-container-2 {
+    display: none;
+  }
+}
+
+/* ------------------------------------ 2 - Large Screen ------------------------------------ */
+@media screen and (min-width: 900px) {
+  header {
+    /* ------------------------ 1 - Navigation  ------------------------ */
+  }
+  header .nav__items {
+    top: 20px;
+  }
+  header .nav__items-column {
+    display: flex;
+    flex-flow: row;
+  }
+  #home main .fonctionnalities .swiper-slide {
+    flex-flow: row-reverse;
+  }
+  #home main .fonctionnalities__item {
+    margin-top: 50px;
+    width: 40vw;
+  }
+  #home main .fonctionnalities__item-btns {
+    left: 110px;
+    flex-flow: row;
+  }
+  #pro .description span {
+    width: 600px;
+  }
+  #pro .description-img {
+    width: 450px;
+  }
+  #pro .tarif {
+    margin-top: -150px;
+  }
+  #pro .tarif-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #contact .nav__link, #inscription .nav__link {
+    list-style: none;
+    margin: 5px;
+  }
+  #contact .nav__link-item, #inscription .nav__link-item {
+    color: #E1CAB4;
+  }
+  #contact .nav .secondary__btn, #inscription .nav .secondary__btn {
+    border: 2px solid #E1CAB4;
+  }
+  #contact main, #inscription main {
+    display: flex;
+  }
+  #contact main .banniere, #inscription main .banniere {
+    height: 100vh;
+    width: 35vw;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    z-index: -1000;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  #contact main .form-items, #inscription main .form-items {
+    width: 40vw;
+  }
+}
+
+/* ------------------------------------ 3 - Extralarge Screen ------------------------------------ */
+@media screen and (min-width: 1600px) {
+  body {
+    width: 1400px;
+  }
+  body#home .showcase {
+    margin: 0 auto;
+    width: 1400px;
+    left: auto;
+  }
+  body#home .banniere {
+    width: 1400px;
+  }
+  .banniere {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

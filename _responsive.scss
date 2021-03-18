@@ -1,0 +1,218 @@
+/* ------------------------------------ _Composants
+                  1 - Medium Screen
+                    1- Navigation
+                    2- Footer
+                    3- Banniere
+                  2 - Large Screen
+                    1- Navigation
+                  3 - Extralarge Screen ------------------------------------ */
+
+
+/* ------------------------------------ 1 - Medium Screen ------------------------------------ */
+
+@include media-md{
+    header {
+/* ------------------------ 1 - Navigation  ------------------------ */
+        .nav{
+            .logo__desktop{
+                display: block;
+            }
+        
+            .logo__mobil{
+                display: none;
+            }
+        
+            &__items{
+                top: 20px;       
+            }
+        
+            &__link{
+        
+                &-mobil-hide{
+                    display: block;
+                }
+            }
+        }
+    }
+
+/* ------------------------ 2 - Footer  ------------------------ */
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+
+        p{
+            width: 33%;
+            text-align: center;
+        }
+    }
+
+/* ------------------------ 3 - Bannniere  ------------------------ */
+
+    .banniere{
+        margin-left: -5vw;
+    }
+
+/* ------------------------ 4 - Espace Pro  ------------------------ */
+
+    #pro{
+        .description{
+        display: flex;
+        
+            &-img{
+                display: block;
+                width: 350px;
+                margin-top: 150px;
+            }
+        }
+
+        .tarif{
+            margin-top: -150px;
+
+            &-items{
+                display: grid;
+                grid-gap: 3vw;    
+                grid-template-columns: repeat(2, 1fr);    
+            }
+
+            &-item{
+                margin: 0;
+            }
+        }
+    }
+
+    #home{
+        main{
+            .team{
+                .mobil-hidden{
+                    display: block;
+                }
+    
+                .swiper-container-2{
+                    display: none;
+                }
+            }    
+        }
+    }
+}
+
+/* ------------------------------------ 2 - Large Screen ------------------------------------ */
+
+@include media-lg{
+    header {
+/* ------------------------ 1 - Navigation  ------------------------ */
+            .nav{
+                        
+            &__items{
+                top: 20px;  
+                
+                &-column{
+                    display: flex;
+                    flex-flow: row;
+                }             
+            }
+        }
+    }
+
+    #home main{
+        .fonctionnalities{
+            .swiper-slide{
+                flex-flow: row-reverse;
+            }
+
+            &__item{
+                margin-top: 50px;
+                width: 40vw;
+
+                &-btns{
+                    left: 110px;
+                    flex-flow: row;
+                }
+            }
+        }    
+    }
+
+    #pro{
+        .description{
+            span{
+                width: 600px;
+            }
+
+            &-img{
+                width: 450px;
+            }
+        }
+
+        .tarif{
+            margin-top: -150px;
+
+            &-items{
+                grid-template-columns: repeat(3, 1fr);    
+            }
+        }
+    }
+
+    #contact, #inscription{
+        .nav{
+            &__link{
+                list-style: none;
+                margin: 5px;
+                
+                &-item{
+                    color: $light;
+                }  
+            }
+
+            .secondary__btn{
+                border: 2px solid $light;
+            }
+        }
+
+        main{
+            display: flex;
+        
+            .banniere{
+                height: 100vh;
+                width: 35vw;
+                position: absolute;
+                top: 0;
+                right: 150px;
+                z-index: -1000;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;    
+            }
+    
+            .form{
+    
+                &-items{
+                    width: 40vw;
+                }
+            }    
+        }
+    }
+}
+
+/* ------------------------------------ 3 - Extralarge Screen ------------------------------------ */
+
+@include media-xl{
+    body{
+        width: 1400px;
+    }
+
+    body#home{
+            .showcase{
+                margin: 0 auto;
+                width: 1400px; 
+                left: auto;   
+            }
+            .banniere{
+                width: 1400px;
+            }
+        }    
+
+
+    .banniere{
+        width: 100%;
+        margin-left: 0;
+    }
+}
