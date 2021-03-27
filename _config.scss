@@ -5,33 +5,33 @@
 
 /* ------------------------------------ 1- Variables ------------------------------------ */
 
-$blue: #2A707A;
-$orange: #DB5F31;
+$blue: #4d0818;
+$orange: #db5f31;
 $dark: #2e2e36;
-$light: #E1CAB4;
+$light: #e1cab4;
 $semi-bold: 600;
-$poppins: 'poppins', sans-serif;
-$akaya: 'Akaya Telivigala', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+$poppins: "poppins", sans-serif;
+$akaya: "Akaya Telivigala", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap");
 
 /* ------------------------------------ 2- Configuration de base ------------------------------------ */
 
-*{
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
 /* ------------------------------------ 3- Responsive ------------------------------------ */
 
 @mixin media-md {
-    @media screen and (min-width: 700px) {
-      @content;
-    }
+  @media screen and (min-width: 700px) {
+    @content;
+  }
 }
 
 @mixin media-lg {
@@ -45,4 +45,3 @@ img{
     @content;
   }
 }
-  

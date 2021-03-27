@@ -35,7 +35,7 @@ a,
 li {
   color: $dark;
   font-family: $poppins;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-decoration: none;
   list-style: none;
 }
@@ -50,6 +50,12 @@ li {
   background: $orange;
   padding: 5px 10px;
   border-radius: 10px;
+  border: 2px $orange solid;
+
+  &:hover {
+    background: transparent;
+    color: $orange;
+  }
 }
 
 .secondary__btn {
@@ -60,6 +66,11 @@ li {
   border: 2px $blue solid;
   padding: 5px 10px;
   border-radius: 10px;
+
+  &:hover {
+    background: $blue;
+    color: $light;
+  }
 }
 
 /* ------------------------------------ 3 - Inscription ------------------------------------ */
@@ -132,6 +143,7 @@ li {
       width: 100vw;
       background: url(../img/absoludo-showcas.webp) center no-repeat;
       background-size: cover;
+      background-attachment: fixed;
       margin: 0;
       position: absolute;
       top: 0;
@@ -141,6 +153,15 @@ li {
     .pt-5 .nav__link-item {
       color: $light;
       text-decoration: none;
+    }
+
+    .secondary__btn {
+      background: $blue;
+      color: $light;
+      &:hover {
+        background: transparent;
+        color: $blue;
+      }
     }
 
     .h1 {
@@ -169,6 +190,7 @@ li {
       background: linear-gradient(to right, rgba($dark, 0.9), rgba($dark, 0.3)),
         url("../img/absoludo-espace-pro.webp") center top no-repeat;
       background-size: cover;
+      background-attachment: fixed;
 
       & h3 {
         color: $orange;
@@ -179,6 +201,7 @@ li {
       background: linear-gradient(to right, rgba($dark, 0.9), rgba($dark, 0.3)),
         url("../img/absoludo-soutenir.webp") center no-repeat;
       background-size: cover;
+      background-attachment: fixed;
 
       & h3 {
         color: $orange;
@@ -220,6 +243,10 @@ li {
           &::after {
             content: "";
           }
+
+          &:hover {
+            color: $light;
+          }
         }
 
         &-img {
@@ -260,6 +287,8 @@ li {
         &-img {
           width: 150px;
           border-radius: 50%;
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.9);
+          margin-bottom: 10px;
         }
 
         &-nom {
@@ -274,7 +303,7 @@ li {
         }
 
         &-game {
-          width: 150px;
+          width: 200px;
           text-align: center;
           margin: 0;
         }
@@ -287,13 +316,15 @@ li {
         }
       }
 
-      .swiper-slide {
-        width: 200px !important;
-        height: 420px;
+      .swiper {
+        &-slide {
+          width: 200px !important;
+          height: 420px;
 
-        &-active {
-          transform: scale(1.2);
-          transition: 0.4s;
+          &-active {
+            transform: scale(1.2);
+            transition: 0.4s;
+          }
         }
       }
     }

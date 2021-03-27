@@ -24,7 +24,7 @@ img {
                   5 - Footer ------------------------------------ */
 /* ------------------------------------ 1 - Globaux ------------------------------------ */
 body {
-  background: #E1CAB4;
+  background: #e1cab4;
   overflow-x: hidden;
   width: 90vw;
   margin: 0 auto;
@@ -93,7 +93,7 @@ body {
 .banniere {
   padding: 10px;
   text-align: center;
-  background: #2A707A;
+  background: #4d0818;
   width: 100vw;
   margin-left: -18px;
 }
@@ -103,11 +103,11 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: "poppins", sans-serif;
-  color: #E1CAB4;
+  color: #e1cab4;
 }
 
 .banniere-p {
-  color: #E1CAB4;
+  color: #e1cab4;
 }
 
 .banniere-btn {
@@ -115,8 +115,13 @@ body {
 }
 
 .banniere .secondary__btn {
-  color: #E1CAB4;
-  border: 2px #E1CAB4 solid;
+  color: #e1cab4;
+  border: 2px #e1cab4 solid;
+}
+
+.banniere .secondary__btn:hover {
+  color: #db5f31;
+  background: #e1cab4;
 }
 
 /* ------------------------------------ 4 - Formulaire ------------------------------------ */
@@ -136,8 +141,8 @@ body {
 }
 
 .form-btn {
-  color: #2A707A;
-  border: 2px solid #2A707A;
+  color: #4d0818;
+  border: 2px solid #4d0818;
   border-radius: 10px;
   width: fit-content;
   padding: 5px 10px;
@@ -149,7 +154,7 @@ body {
 .form-input {
   background: transparent;
   border: none;
-  border-bottom: 2px solid #2A707A;
+  border-bottom: 2px solid #4d0818;
   width: 100%;
   color: #2e2e36;
   font-family: "poppins", sans-serif;
@@ -160,7 +165,7 @@ body {
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #2A707A;
+  border-bottom: 2px solid #4d0818;
   color: #2e2e36;
   font-family: "poppins", sans-serif;
   font-size: 1rem;
@@ -177,7 +182,7 @@ body {
 }
 
 .footer-p-link {
-  color: #DB5F31;
+  color: #db5f31;
   text-decoration: none;
 }
 
@@ -191,24 +196,24 @@ body {
 .h1 {
   font-family: "Akaya Telivigala", cursive;
   font-size: 2.5em;
-  color: #2A707A;
+  color: #4d0818;
   padding-top: 130px;
 }
 
 .h1__highlight {
-  color: #DB5F31;
+  color: #db5f31;
 }
 
 h2 {
   font-family: "Akaya Telivigala", cursive;
   font-size: 2em;
-  color: #2A707A;
+  color: #4d0818;
 }
 
 h3 {
   font-family: "Akaya Telivigala", cursive;
   font-size: 1.5em;
-  color: #2A707A;
+  color: #4d0818;
 }
 
 p,
@@ -216,7 +221,7 @@ a,
 li {
   color: #2e2e36;
   font-family: "poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-decoration: none;
   list-style: none;
 }
@@ -225,21 +230,32 @@ li {
 .primary__btn {
   display: block;
   width: fit-content;
-  color: #E1CAB4;
+  color: #e1cab4;
   text-decoration: none;
-  background: #DB5F31;
+  background: #db5f31;
   padding: 5px 10px;
   border-radius: 10px;
+  border: 2px #db5f31 solid;
+}
+
+.primary__btn:hover {
+  background: transparent;
+  color: #db5f31;
 }
 
 .secondary__btn {
   display: block;
   width: fit-content;
-  color: #2A707A;
+  color: #4d0818;
   text-decoration: none;
-  border: 2px #2A707A solid;
+  border: 2px #4d0818 solid;
   padding: 5px 10px;
   border-radius: 10px;
+}
+
+.secondary__btn:hover {
+  background: #4d0818;
+  color: #e1cab4;
 }
 
 /* ------------------------------------ 3 - Inscription ------------------------------------ */
@@ -266,7 +282,7 @@ li {
 }
 
 #pro .tarif-item {
-  border: 2px solid #2A707A;
+  border: 2px solid #4d0818;
   border-radius: 20px;
   padding: 20px;
   margin: 20px 0;
@@ -274,7 +290,7 @@ li {
 
 #pro .tarif-item-h3 {
   font-family: "Akaya Telivigala", cursive;
-  color: #2A707A;
+  color: #4d0818;
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
@@ -288,7 +304,7 @@ li {
 }
 
 #pro .tarif-item-price {
-  color: #2A707A;
+  color: #4d0818;
   font-size: 1.5rem;
 }
 
@@ -302,6 +318,7 @@ li {
   width: 100vw;
   background: url(../img/absoludo-showcas.webp) center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   position: absolute;
   top: 0;
@@ -309,17 +326,27 @@ li {
 }
 
 #home header .pt-5 .nav__link-item {
-  color: #E1CAB4;
+  color: #e1cab4;
   text-decoration: none;
 }
 
+#home header .secondary__btn {
+  background: #4d0818;
+  color: #e1cab4;
+}
+
+#home header .secondary__btn:hover {
+  background: transparent;
+  color: #4d0818;
+}
+
 #home header .h1 {
-  color: #E1CAB4;
+  color: #e1cab4;
   margin: 0;
 }
 
 #home header .tagline {
-  color: #E1CAB4;
+  color: #e1cab4;
   font-size: 1.5em;
   margin-top: 5px;
 }
@@ -336,19 +363,21 @@ li {
 #home main .pro {
   background: linear-gradient(to right, rgba(46, 46, 54, 0.9), rgba(46, 46, 54, 0.3)), url("../img/absoludo-espace-pro.webp") center top no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #home main .pro h3 {
-  color: #DB5F31;
+  color: #db5f31;
 }
 
 #home main .don {
   background: linear-gradient(to right, rgba(46, 46, 54, 0.9), rgba(46, 46, 54, 0.3)), url("../img/absoludo-soutenir.webp") center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #home main .don h3 {
-  color: #DB5F31;
+  color: #db5f31;
 }
 
 #home main .fonctionnalities .swiper-slide {
@@ -379,14 +408,19 @@ li {
 #home main .fonctionnalities__item .swiper-button-prev,
 #home main .fonctionnalities__item .swiper-button-next {
   margin: 0 5px;
-  border: 2px solid #2A707A;
-  color: #2A707A;
+  border: 2px solid #4d0818;
+  color: #4d0818;
   width: fit-content;
 }
 
 #home main .fonctionnalities__item .swiper-button-prev::after,
 #home main .fonctionnalities__item .swiper-button-next::after {
   content: "";
+}
+
+#home main .fonctionnalities__item .swiper-button-prev:hover,
+#home main .fonctionnalities__item .swiper-button-next:hover {
+  color: #e1cab4;
 }
 
 #home main .fonctionnalities__item-img {
@@ -427,6 +461,8 @@ li {
 #home main .team__item-img {
   width: 150px;
   border-radius: 50%;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.9);
+  margin-bottom: 10px;
 }
 
 #home main .team__item-nom {
@@ -436,18 +472,18 @@ li {
 
 #home main .team__item-spe {
   font-size: 1.2rem;
-  color: #DB5F31;
+  color: #db5f31;
   margin: 0;
 }
 
 #home main .team__item-game {
-  width: 150px;
+  width: 200px;
   text-align: center;
   margin: 0;
 }
 
 #home main .team__item-contact .social {
-  color: #2A707A;
+  color: #4d0818;
   margin: 10px;
 }
 
@@ -466,8 +502,13 @@ li {
                     1- Navigation
                     2- Footer
                     3- Banniere
+                    4- Espace Pro
+                    5- Accueil
                   2 - Large Screen
                     1- Navigation
+                    2- Accueil
+                    3- Espace Pro
+                    4- Contact & Inscription
                   3 - Extralarge Screen ------------------------------------ */
 /* ------------------------------------ 1 - Medium Screen ------------------------------------ */
 @media screen and (min-width: 700px) {
@@ -519,6 +560,21 @@ li {
   #pro .tarif-item {
     margin: 0;
   }
+  /* ------------------------ 5 - Accueil  ------------------------ */
+  #home main .swiper-button-prev {
+    right: -10px;
+    left: auto;
+  }
+  #home main .swiper-button-next {
+    right: -130px;
+    left: auto;
+  }
+  #home main .team__item-img {
+    /*box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.9);*/
+  }
+  #home main .team__item-img:hover {
+    transform: scale(1.1);
+  }
   #home main .team .mobil-hidden {
     display: block;
   }
@@ -539,6 +595,7 @@ li {
     display: flex;
     flex-flow: row;
   }
+  /* ------------------------ 2 - Accueil  ------------------------ */
   #home main .fonctionnalities .swiper-slide {
     flex-flow: row-reverse;
   }
@@ -550,6 +607,7 @@ li {
     left: 110px;
     flex-flow: row;
   }
+  /* ------------------------ 3 - Espace Pro  ------------------------ */
   #pro .description span {
     width: 600px;
   }
@@ -562,31 +620,50 @@ li {
   #pro .tarif-items {
     grid-template-columns: repeat(3, 1fr);
   }
-  #contact .nav__link, #inscription .nav__link {
+  /* ------------------------ 2 - Contact & Inscription  ------------------------ */
+  #contact .nav,
+  #inscription .nav {
+    z-index: 1000;
+  }
+  #contact .nav__link,
+  #inscription .nav__link {
     list-style: none;
     margin: 5px;
   }
-  #contact .nav__link-item, #inscription .nav__link-item {
-    color: #E1CAB4;
+  #contact .nav__link-item,
+  #inscription .nav__link-item {
+    color: #e1cab4;
   }
-  #contact .nav .secondary__btn, #inscription .nav .secondary__btn {
-    border: 2px solid #E1CAB4;
+  #contact .nav .secondary__btn,
+  #inscription .nav .secondary__btn {
+    border: 2px solid #e1cab4;
   }
-  #contact main, #inscription main {
+  #contact .nav .secondary__btn:hover,
+  #inscription .nav .secondary__btn:hover {
+    background: #e1cab4;
+    color: #4d0818;
+  }
+  #contact .nav .primary__btn:hover,
+  #inscription .nav .primary__btn:hover {
+    color: #db5f31;
+  }
+  #contact main,
+  #inscription main {
     display: flex;
   }
-  #contact main .banniere, #inscription main .banniere {
+  #contact main .banniere,
+  #inscription main .banniere {
     height: 100vh;
     width: 35vw;
     position: absolute;
     top: 0;
     right: 150px;
-    z-index: -1000;
     display: flex;
     flex-flow: column;
     justify-content: center;
   }
-  #contact main .form-items, #inscription main .form-items {
+  #contact main .form-items,
+  #inscription main .form-items {
     width: 40vw;
   }
 }

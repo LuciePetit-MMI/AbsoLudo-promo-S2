@@ -3,216 +3,251 @@
                     1- Navigation
                     2- Footer
                     3- Banniere
+                    4- Espace Pro
+                    5- Accueil
                   2 - Large Screen
                     1- Navigation
+                    2- Accueil
+                    3- Espace Pro
+                    4- Contact & Inscription
                   3 - Extralarge Screen ------------------------------------ */
-
 
 /* ------------------------------------ 1 - Medium Screen ------------------------------------ */
 
-@include media-md{
-    header {
-/* ------------------------ 1 - Navigation  ------------------------ */
-        .nav{
-            .logo__desktop{
-                display: block;
-            }
-        
-            .logo__mobil{
-                display: none;
-            }
-        
-            &__items{
-                top: 20px;       
-            }
-        
-            &__link{
-        
-                &-mobil-hide{
-                    display: block;
-                }
-            }
+@include media-md {
+  header {
+    /* ------------------------ 1 - Navigation  ------------------------ */
+    .nav {
+      .logo__desktop {
+        display: block;
+      }
+
+      .logo__mobil {
+        display: none;
+      }
+
+      &__items {
+        top: 20px;
+      }
+
+      &__link {
+        &-mobil-hide {
+          display: block;
         }
+      }
+    }
+  }
+
+  /* ------------------------ 2 - Footer  ------------------------ */
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+
+    p {
+      width: 33%;
+      text-align: center;
+    }
+  }
+
+  /* ------------------------ 3 - Bannniere  ------------------------ */
+
+  .banniere {
+    margin-left: -5vw;
+  }
+
+  /* ------------------------ 4 - Espace Pro  ------------------------ */
+
+  #pro {
+    .description {
+      display: flex;
+
+      &-img {
+        display: block;
+        width: 350px;
+        margin-top: 150px;
+      }
     }
 
-/* ------------------------ 2 - Footer  ------------------------ */
-    footer{
-        display: flex;
-        justify-content: space-evenly;
+    .tarif {
+      margin-top: -150px;
 
-        p{
-            width: 33%;
-            text-align: center;
-        }
+      &-items {
+        display: grid;
+        grid-gap: 3vw;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &-item {
+        margin: 0;
+      }
     }
+  }
 
-/* ------------------------ 3 - Bannniere  ------------------------ */
+  /* ------------------------ 5 - Accueil  ------------------------ */
 
-    .banniere{
-        margin-left: -5vw;
-    }
+  #home {
+    main {
+      .swiper-button-prev {
+        right: -10px;
+        left: auto;
+      }
 
-/* ------------------------ 4 - Espace Pro  ------------------------ */
-
-    #pro{
-        .description{
-        display: flex;
-        
-            &-img{
-                display: block;
-                width: 350px;
-                margin-top: 150px;
+      .swiper-button-next {
+        right: -130px;
+        left: auto;
+      }
+      .team {
+        &__item {
+          &-img {
+            /*box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.9);*/
+            &:hover {
+              transform: scale(1.1);
             }
+          }
+        }
+        .mobil-hidden {
+          display: block;
         }
 
-        .tarif{
-            margin-top: -150px;
-
-            &-items{
-                display: grid;
-                grid-gap: 3vw;    
-                grid-template-columns: repeat(2, 1fr);    
-            }
-
-            &-item{
-                margin: 0;
-            }
+        .swiper {
+          &-container-2 {
+            display: none;
+          }
         }
+      }
     }
-
-    #home{
-        main{
-            .team{
-                .mobil-hidden{
-                    display: block;
-                }
-    
-                .swiper-container-2{
-                    display: none;
-                }
-            }    
-        }
-    }
+  }
 }
 
 /* ------------------------------------ 2 - Large Screen ------------------------------------ */
 
-@include media-lg{
-    header {
-/* ------------------------ 1 - Navigation  ------------------------ */
-            .nav{
-                        
-            &__items{
-                top: 20px;  
-                
-                &-column{
-                    display: flex;
-                    flex-flow: row;
-                }             
-            }
+@include media-lg {
+  header {
+    /* ------------------------ 1 - Navigation  ------------------------ */
+    .nav {
+      &__items {
+        top: 20px;
+
+        &-column {
+          display: flex;
+          flex-flow: row;
         }
+      }
+    }
+  }
+
+  /* ------------------------ 2 - Accueil  ------------------------ */
+  #home main {
+    .fonctionnalities {
+      .swiper-slide {
+        flex-flow: row-reverse;
+      }
+
+      &__item {
+        margin-top: 50px;
+        width: 40vw;
+
+        &-btns {
+          left: 110px;
+          flex-flow: row;
+        }
+      }
+    }
+  }
+
+  /* ------------------------ 3 - Espace Pro  ------------------------ */
+  #pro {
+    .description {
+      span {
+        width: 600px;
+      }
+
+      &-img {
+        width: 450px;
+      }
     }
 
-    #home main{
-        .fonctionnalities{
-            .swiper-slide{
-                flex-flow: row-reverse;
-            }
+    .tarif {
+      margin-top: -150px;
 
-            &__item{
-                margin-top: 50px;
-                width: 40vw;
+      &-items {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
 
-                &-btns{
-                    left: 110px;
-                    flex-flow: row;
-                }
-            }
-        }    
+  /* ------------------------ 2 - Contact & Inscription  ------------------------ */
+  #contact,
+  #inscription {
+    .nav {
+      z-index: 1000;
+
+      &__link {
+        list-style: none;
+        margin: 5px;
+
+        &-item {
+          color: $light;
+        }
+      }
+
+      .secondary__btn {
+        border: 2px solid $light;
+
+        &:hover {
+          background: $light;
+          color: $blue;
+        }
+      }
+
+      .primary__btn:hover {
+        color: $orange;
+      }
     }
 
-    #pro{
-        .description{
-            span{
-                width: 600px;
-            }
+    main {
+      display: flex;
 
-            &-img{
-                width: 450px;
-            }
+      .banniere {
+        height: 100vh;
+        width: 35vw;
+        position: absolute;
+        top: 0;
+        right: 150px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+      }
+
+      .form {
+        &-items {
+          width: 40vw;
         }
-
-        .tarif{
-            margin-top: -150px;
-
-            &-items{
-                grid-template-columns: repeat(3, 1fr);    
-            }
-        }
+      }
     }
-
-    #contact, #inscription{
-        .nav{
-            &__link{
-                list-style: none;
-                margin: 5px;
-                
-                &-item{
-                    color: $light;
-                }  
-            }
-
-            .secondary__btn{
-                border: 2px solid $light;
-            }
-        }
-
-        main{
-            display: flex;
-        
-            .banniere{
-                height: 100vh;
-                width: 35vw;
-                position: absolute;
-                top: 0;
-                right: 150px;
-                z-index: -1000;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;    
-            }
-    
-            .form{
-    
-                &-items{
-                    width: 40vw;
-                }
-            }    
-        }
-    }
+  }
 }
 
 /* ------------------------------------ 3 - Extralarge Screen ------------------------------------ */
 
-@include media-xl{
-    body{
-        width: 1400px;
+@include media-xl {
+  body {
+    width: 1400px;
+  }
+
+  body#home {
+    .showcase {
+      margin: 0 auto;
+      width: 1400px;
+      left: auto;
     }
-
-    body#home{
-            .showcase{
-                margin: 0 auto;
-                width: 1400px; 
-                left: auto;   
-            }
-            .banniere{
-                width: 1400px;
-            }
-        }    
-
-
-    .banniere{
-        width: 100%;
-        margin-left: 0;
+    .banniere {
+      width: 1400px;
     }
+  }
+
+  .banniere {
+    width: 100%;
+    margin-left: 0;
+  }
 }
