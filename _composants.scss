@@ -73,6 +73,19 @@ li {
   }
 }
 
+/* ------------------------------------ 3 - Pop Up ------------------------------------ */
+
+.popup {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 /* ------------------------------------ 3 - Inscription ------------------------------------ */
 
 #inscription {
@@ -143,9 +156,9 @@ li {
       width: 100vw;
       background: url(../img/absoludo-showcas.webp) center no-repeat;
       background-size: cover;
-      background-attachment: fixed;
-      margin: 0;
+      background-attachment: scroll;
       position: absolute;
+      margin: 0;
       top: 0;
       left: 0;
     }
@@ -190,7 +203,7 @@ li {
       background: linear-gradient(to right, rgba($dark, 0.9), rgba($dark, 0.3)),
         url("../img/absoludo-espace-pro.webp") center top no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      background-attachment: scroll;
 
       & h3 {
         color: $orange;
@@ -201,7 +214,7 @@ li {
       background: linear-gradient(to right, rgba($dark, 0.9), rgba($dark, 0.3)),
         url("../img/absoludo-soutenir.webp") center no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      background-attachment: scroll;
 
       & h3 {
         color: $orange;

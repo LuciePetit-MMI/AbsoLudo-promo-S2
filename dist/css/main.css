@@ -258,6 +258,18 @@ li {
   color: #e1cab4;
 }
 
+/* ------------------------------------ 3 - Pop Up ------------------------------------ */
+.popup {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
 /* ------------------------------------ 3 - Inscription ------------------------------------ */
 #inscription .h1 {
   color: #2e2e36;
@@ -318,9 +330,9 @@ li {
   width: 100vw;
   background: url(../img/absoludo-showcas.webp) center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
+  background-attachment: scroll;
   position: absolute;
+  margin: 0;
   top: 0;
   left: 0;
 }
@@ -363,7 +375,7 @@ li {
 #home main .pro {
   background: linear-gradient(to right, rgba(46, 46, 54, 0.9), rgba(46, 46, 54, 0.3)), url("../img/absoludo-espace-pro.webp") center top no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #home main .pro h3 {
@@ -373,7 +385,7 @@ li {
 #home main .don {
   background: linear-gradient(to right, rgba(46, 46, 54, 0.9), rgba(46, 46, 54, 0.3)), url("../img/absoludo-soutenir.webp") center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #home main .don h3 {
@@ -561,16 +573,11 @@ li {
     margin: 0;
   }
   /* ------------------------ 5 - Accueil  ------------------------ */
-  #home main .swiper-button-prev {
-    right: -10px;
-    left: auto;
+  #home header .showcase {
+    background-attachment: fixed;
   }
-  #home main .swiper-button-next {
-    right: -130px;
-    left: auto;
-  }
-  #home main .team__item-img {
-    /*box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.9);*/
+  #home main .banniere.pro, #home main .banniere.don {
+    background-attachment: fixed;
   }
   #home main .team__item-img:hover {
     transform: scale(1.1);
@@ -598,6 +605,14 @@ li {
   /* ------------------------ 2 - Accueil  ------------------------ */
   #home main .fonctionnalities .swiper-slide {
     flex-flow: row-reverse;
+  }
+  #home main .fonctionnalities .swiper-button-prev {
+    right: -10px;
+    left: auto;
+  }
+  #home main .fonctionnalities .swiper-button-next {
+    right: -130px;
+    left: auto;
   }
   #home main .fonctionnalities__item {
     margin-top: 50px;

@@ -30,15 +30,11 @@
 
 <!-------------------------------------------- Formulaire de contact ---------------------------------------------------------->
         <div class="form">
-            <form class="form-items">
-                <label>Nom :</label>
-                <input type="text" class="form-input">
-                <label>Prénom :</label>
-                <input type="text" class="form-input">
-                <label>Mail :</label>
-                <input type="text" class="form-input">
-                <label>Message :</label>
-                <textarea class="form-input"></textarea>
+            <form class="form-items" method="post">
+                <input name="firstname" type="text" class="form-input" placeholder="Nom :">
+                <input name="name" type="text" class="form-input" placeholder="Prénom :">
+                <input name="mail" type="email" class="form-input" placeholder="Mail :">
+                <textarea name="message" class="form-input" placeholder="Message :"></textarea>
                 <input type="submit" class="form-btn" value="Envoyer">
             </form>
         </div>
@@ -51,5 +47,6 @@
             <a href="#" class="banniere-btn primary__btn">Faire un don</a>
         </section>
     </main>
+
 </body>
 </html>

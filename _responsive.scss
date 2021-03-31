@@ -86,20 +86,22 @@
   /* ------------------------ 5 - Accueil  ------------------------ */
 
   #home {
+    header {
+      .showcase {
+        background-attachment: fixed;
+      }
+    }
     main {
-      .swiper-button-prev {
-        right: -10px;
-        left: auto;
+      .banniere {
+        &.pro,
+        &.don {
+          background-attachment: fixed;
+        }
       }
 
-      .swiper-button-next {
-        right: -130px;
-        left: auto;
-      }
       .team {
         &__item {
           &-img {
-            /*box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.9);*/
             &:hover {
               transform: scale(1.1);
             }
@@ -141,6 +143,16 @@
     .fonctionnalities {
       .swiper-slide {
         flex-flow: row-reverse;
+      }
+
+      .swiper-button-prev {
+        right: -10px;
+        left: auto;
+      }
+
+      .swiper-button-next {
+        right: -130px;
+        left: auto;
       }
 
       &__item {
